@@ -1,5 +1,11 @@
 ---
-const pageTitle = 'Home page';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+
+const pageTitle = `Fer Falcon's Astro Home Page`;
+
+console.log('Xaraxa')
 ---
 
 <html lang="en">
@@ -11,11 +17,8 @@ const pageTitle = 'Home page';
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-		<nav>
-			<a href="/">Home</a>
-			<a href="/about/">About</a>
-			<a href="/blog/">Blog</a>
-		</nav>
-		<h1>Fer Falcon's Astro Home Page</h1>
+		<Navigation />
+		<h1>{pageTitle}</h1>
+		<Footer />
 	</body>
 </html>
